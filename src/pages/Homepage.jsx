@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
-import Title from "../components/Title";
-import Navbar from "../components/Navbar";
 import Guide from "../components/Guide";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
 const Homepage = () => {
   const guideref = useRef(null);
@@ -10,12 +9,7 @@ const Homepage = () => {
   return (
     <div>
       <div className="h-full w-full">
-        <Navbar guideref={guideref} />
-        <Title />
-        <div ref={guideref} className="">
-          <Guide />
-        </div>
-
+        <Hero/>
         <Footer />
       </div>
     </div>
