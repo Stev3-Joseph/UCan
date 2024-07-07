@@ -35,7 +35,7 @@ const Hero = () => {
         alt="UCan"
         className="h-screen w-screen object-cover overflow-hidden"
       />
-      <div className="h-screen w-screen flex absolute inset-0 items-center ml-96 ">
+      <div className="flex absolute inset-0 items-center ml-96 ">
         <div className="relative h-[500px] w-[500px] bg-black opacity-80 rounded-lg shadow-2xl transform translate-z-10 rotate-1 skew-y-2 mr-10 border-r-8 border-zinc-200 animate"></div>
         <div className="absolute top-[110px] left-[200px] transform translate-z-10 rotate-1 skew-y-3 opacity-0 text">
           <Navbar setSidebar={setSidebar} />
