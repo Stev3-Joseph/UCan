@@ -35,12 +35,26 @@ const Hero = () => {
         className="h-screen object-cover overflow-hidden w-screen"
       />
       <div className="flex absolute inset-0 items-center justify-center">
-        <div className=" h-[500px] w-[500px] bg-black opacity-80 rounded-lg shadow-2xl transform translate-z-10 rotate-1 skew-y-2 mr-10 animate"></div>
-        <div className="absolute top-[110px] left-[550px] transform translate-z-10 rotate-1 skew-y-2 opacity-0 text">
-          <Navbar setSidebar={setSidebar} />
+        <div className="flex-col justify-center h-[500px] sm:w-[300px] w-[500px] bg-black opacity-80 rounded-lg shadow-2xl transform translate-z-10  skew-y-2  animate sm:px-15  ">
+          <div className="opacity-0 text">
+            <Navbar setSidebar={setSidebar} />
+          </div>
+          <div className="mt-36 ml-8">
+            <h1 className="text-7xl text-white font-bold opacity-0 text">
+              UCan
+            </h1>
+            <p className="text-white text-4xl opacity-0 text">
+              Learn, Grow & Share
+            </p>
+            <Link to="/general">
+              <button className="mt-4 px-4 py-2 bg-purple-600 text-white opacity-0 rounded-md text">
+                Get Started
+              </button>
+            </Link>
+          </div>
         </div>
         {sidebar ? (
-          <div className="absolute top-[250px] right-[50px] w-[70px] rounded-full shadow-2xl flex flex-col items-center justify-center z-10 opacity-100 transition-opacity duration-500">
+          <div className="absolute top-[250px] right-[50px] w-[70px] rounded-full shadow-2xl flex flex-col items-center justify-center z-10 opacity-100 transition-opacity duration-500 ">
             <a href="https://github.com/Stev3-Joseph">
               <img
                 src="https://banner2.cleanpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg"
@@ -64,18 +78,6 @@ const Hero = () => {
             </a>
           </div>
         ) : null}
-
-        <div className="absolute top-[320px] left-[400px] ">
-          <h1 className="text-7xl text-white font-bold opacity-0 text">UCan</h1>
-          <p className="text-white text-4xl opacity-0 text">
-            Learn, Grow & Share
-          </p>
-          <Link to="/general">
-            <button className="mt-4 px-4 py-2 bg-purple-600 text-white opacity-0 rounded-md text">
-              Get Started
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
   );
