@@ -37,7 +37,7 @@ const Roadmap = () => {
           duration: 1, // Animation duration
           scrollTrigger: {
             trigger: div,
-            start: "top 60%", // Start animation when top of element reaches 80% from top of viewport
+            start: "top 70%", // Start animation when top of element reaches 80% from top of viewport
             toggleActions: "play none none reverse",
             // Play animation on enter, do nothing on leave
           },
