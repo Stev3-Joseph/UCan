@@ -6,7 +6,7 @@ const Homepage = () => {
   const guideref = useRef(null);
 
   return (
-    <div >
+    <div className="min-h-screen ">
       <div>
         <Hero />
         <Footer />

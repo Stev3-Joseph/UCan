@@ -47,9 +47,9 @@ export default function Component() {
             <SearchIcon className="absolute right-8 top-4 h-5 w-5 text-gray-400" />
             <TextField type="search" placeholder="Search" className="" />
           </div>
-          <nav className="space-y-4 ">
-            <div className="sticky top-0 left-0">
-              <h3 className="text-xs font-semibold text-gray-500 uppercase">
+          <nav className="space-y-4 h-full">
+            <div className="sticky top-4 left-0">
+              <h3 className="text-xs font-semibold text-gray-500 uppercase ">
                 Get Started
               </h3>
               <ul className="mt-2 space-y-2">
